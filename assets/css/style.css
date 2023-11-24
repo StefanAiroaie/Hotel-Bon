@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Ubuntu";
+    src: url("../fonts/Ubuntu/Ubuntu-Regular.ttf");
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -5,44 +10,10 @@
 }
 
 
-@font-face {
-    font-family: "Ubuntu";
-    src: url("../fonts/Ubuntu/Ubuntu-Regular.ttf");
-}
-
-
-@media (min-width: 1440px) {
-    body {
-        /* desktop */
-    }
-}
-
-/* test fons size and media queries */
-
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    body {
-        font-size: 1.2rem;
-        /* iPad */
-    }
-}
-
-@media (max-width: 767px) {
-    body {
-        font-size: 1rem;
-        /* mobile */
-    }
-
-}
-
-
-
-
-/* end test */
-
 html {
     font-family: Ubuntu;
     scroll-behavior: smooth;
+    /* width: 1440px; */
 }
 
 a {
@@ -53,7 +24,7 @@ a {
 a:hover {
     background-color: #957554;
     color: var(--color-01);
-    border: 1px solid var(--color-04);
+
 }
 
 li {
@@ -140,14 +111,11 @@ header nav {
     padding: 4rem;
     text-align: center;
     color: var(--color-04);
-
 }
 
 .facilities__icons .icons img {
     padding-bottom: 1rem;
 }
-
-
 
 /* rooms */
 
@@ -162,12 +130,11 @@ button {
 }
 
 button:hover {
-    border: none;
     background-color: var(--color-04);
     color: var(--color-01);
 }
 
-/* sssssss */
+/* rooms grid */
 
 .rooms {
     display: grid;
@@ -186,6 +153,7 @@ button:hover {
     border-radius: 10px;
     background-image: url("../img/standard_twin_room.png");
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .standard__room {
@@ -193,6 +161,7 @@ button:hover {
     border-radius: 10px;
     background-image: url("../img/standard_room.png");
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .view__room {
@@ -200,6 +169,7 @@ button:hover {
     border-radius: 10px;
     background-image: url("../img/standard_view_room.png");
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .deluxe__room {
@@ -207,22 +177,21 @@ button:hover {
     border-radius: 10px;
     background-image: url("../img/deluxe_room.png");
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* for room name and button */
 .container {
-    align-self: center;
     display: grid;
     justify-items: center;
     width: 50%;
     color: var(--color-01);
     gap: 1rem;
     padding-top: 23rem;
-
+    width: auto;
 }
 
 /* call__to__action */
-
 .call__to__action {
     display: flex;
     flex-direction: column;
@@ -230,7 +199,6 @@ button:hover {
     align-items: center;
     gap: 1rem;
     padding-bottom: 2rem;
-    border: 2px solid red;
 }
 
 /* footer */
